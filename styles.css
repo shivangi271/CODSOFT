@@ -1,6 +1,5 @@
-/* Reset and base styles */
-* {
-  box-sizing: border-box;
+/* Reset some default spacing */
+body, h1, h2, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -8,84 +7,84 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  line-height: 1.6;
   color: #333;
+  line-height: 1.6;
 }
 
-/* Header */
+/* Header Section */
 header {
   background-color: #35424a;
-  color: #fff;
-  padding: 20px;
+  color: #ffffff;
   text-align: center;
+  padding: 30px 20px;
 }
 
 header h1 {
-  margin-bottom: 10px;
   font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 header p {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 5px auto;
   font-size: 1rem;
 }
 
-/* Navigation */
+/* Navigation Menu */
 nav {
   background-color: #2d3e46;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 nav li {
-  margin: 10px;
+  margin: 0;
 }
 
 nav a {
+  display: block;
+  padding: 15px 20px;
   color: #ffffff;
   text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #3f5360;
+  background-color: #1f2d36;
 }
 
-/* Main Sections */
+/* Main Content Sections */
 main {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 20px auto;
   padding: 0 20px;
 }
 
 section {
   background-color: #ffffff;
-  margin-bottom: 20px;
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 section h2 {
-  margin-bottom: 15px;
   color: #35424a;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
 /* About Section Image */
 .profile-photo {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
   display: block;
-  margin: 20px auto;
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
 }
 
 /* Skills List */
@@ -98,7 +97,7 @@ section h2 {
   margin-bottom: 8px;
 }
 
-/* Projects */
+/* Projects Section */
 .project {
   margin-bottom: 20px;
 }
@@ -107,19 +106,22 @@ section h2 {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-/* Resume Link */
+.project p {
+  margin-bottom: 8px;
+}
+
+/* Resume Section Link */
 #resume a {
   display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
+  padding: 10px 20px;
   background-color: #35424a;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 #resume a:hover {
@@ -129,18 +131,27 @@ section h2 {
 /* Contact Section */
 #contact ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 #contact li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+}
+
+#contact a {
+  color: #35424a;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
+  text-align: center;
   background-color: #35424a;
   color: #ffffff;
-  text-align: center;
-  padding: 12px 0;
+  padding: 15px 20px;
   font-size: 0.9rem;
 }
